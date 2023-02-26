@@ -1,0 +1,18 @@
+.Sign-up {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2c3afd;
+    font-family: 'Arial';
+     font-weight: '300';
+  }
+  
+  .Sign-up a {
+    color: #2c3afd;
+    text-decoration: none;
+  }
+  
+  .Sign-up a:hover {
+    text-decoration: underline;
+  }
+

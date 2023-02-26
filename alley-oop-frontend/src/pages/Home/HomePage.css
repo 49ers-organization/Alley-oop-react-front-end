@@ -1,0 +1,7 @@
+.container {
+    background-image: url('../../assets/images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}

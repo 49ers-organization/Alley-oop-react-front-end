@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a:active,
+a:focus,
+a:focus-visible,
+a:target,
+a:focus-within {
+    color: #F58915;
+}
+
+.devider {
+    width: 98.31px;
+    height: 0px;
+
+
+    border: 3px solid #F58915;
+}
+
+span {
+    margin: 0 10px;
+   font-weight: '300';
+   color:#b4acac ;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.line {
+    display: block;
+    height: 1px;
+    width: 70%;
+    background-color: #b4acac;
+    margin: 10px 1;
+  }
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    background: transparent;
+}
+.nav__item {
+margin-left: 20px;
+margin-bottom: 30px;
+height: 50px; }
+
+.nav__item a{
+    display: inline-block;
+    margin : 0 10px;
+    height: 50px;
+    margin: 0 10px;
+    align-items: center;
+    background-color: #fff;
+    color: #b4acac;
+    font-size: 18px;
+    font-family: 'Arial';
+    font-weight: '400';
+    padding-bottom: 10px;
+    text-transform: none;
+    transition: all 0.3s ease; }
+    .nav__item a:hover {
+        color : #F58915;
+    
+      }
+      .nav__item:hover {
+        border-bottom: 2px solid #F58915!important; /* or any other color you want */
+      }
+
+  
+.nav__brand {
+    text-transform: uppercase;
+}
+
+.nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.nav__toggler {
+    display: none;
+}
+
+.nav__toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: rgb(204, 204, 204);
+    transition: 0.3s ease-in;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__menu {
+        position: fixed;
+        top: 7vh;
+        right: 0;
+        height: 93vh;
+        width: 50vw;
+        background: rgb(0, 33, 65);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: 0.5s ease-in;
+    }
+}
+
+/* Active Class */
+.nav__active {
+    transform: translateX(0%);
+}
+
+/* Toggle Icon Animation */
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-4px, -5px);
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2c3afd;
+    font-family: 'Arial';
+     font-weight: '300';
+  }
+  
+  .forgot-password a {
+    color: #2c3afd;
+    text-decoration: none;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+
+  
